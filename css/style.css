@@ -1,0 +1,297 @@
+@import "colors.css";
+/*Start Index*/
+
+
+@font-face {
+	font-family: "SF";
+	src: url("../fonts/SF-UI-Display-Light.ttf");
+  }
+
+  * {
+	margin: 0;
+	padding: 0;
+	font-family: "SF";
+  }
+  
+  a {
+	padding: 0;
+	text-decoration: none;
+  }
+
+  .menu img{
+	  width:33px;
+	  height:auto;
+  }
+
+  .menu img{
+	width:33px;
+	height:auto;
+}
+
+.menu .search{
+	width:137px;
+	height:40px;
+	border-radius: 15px;
+	background-color: #42506B;
+	color:white;
+	font-size:16px;
+	box-shadow: 4px 4px 10px rgb(0, 0, 0, 25%);
+}
+
+@media (max-width: 392px) {
+	.menu .search{
+		display: none;
+	}
+}
+
+.menu .search::placeholder{
+	text-align: center;
+	color:white;
+	width:100%;
+}
+ 
+  .nav-item {
+	padding: 5px 20px;
+  }
+  
+  
+  .nav-link {
+	font-size: 24px;
+	color: #42506b !important;;
+  }
+
+  .degrees-c{
+	background-color: #42506B;
+	color:white;
+	height:36px;
+	width:36px;
+	border-radius: 100%;
+	box-shadow: 4px 4px 10px rgb(0, 0, 0, 25%);
+	border:none;
+  }
+
+  .degrees-f{
+	background-color: #42506B;
+	color:white;
+	height:36px;
+	width:36px;
+	border-radius: 100%;
+	box-shadow: 4px 4px 10px rgb(0, 0, 0, 25%);
+	border:none;
+}
+
+
+  .degrees-c svg{
+	width:50px;
+	height:50px;
+	position:relative;
+	top:-40%;
+	right:10%;
+}
+
+.degrees-f svg{
+	width:50px;
+	height:50px;
+	position:relative;
+	top:-40%;
+	right:5%;
+}
+
+.degrees-c-c{
+	font-size:20px;
+	position:relative;
+	right:25%;
+	top:10%;
+}
+
+.week{
+	margin-top: 100px;
+}
+
+.card-day{
+	width:250px;
+	height:auto;
+	margin: 0 auto;
+	padding: 0;
+}
+
+@media (max-width: 1199px) {
+	.card-day{
+		width:200px;
+	}
+}
+
+@media (max-width: 991px) {
+	.card-day{
+		width:250px;
+	}
+}
+
+
+
+.day{
+	text-align: center;
+	color:#42506B;
+	font-size: 24px;
+}
+
+.content-card{
+	border-radius: 20px;
+	width:100%;
+	background: -webkit-linear-gradient(315deg, rgba(66, 80, 107, 0.877), rgb(66, 80, 107));
+	background: -moz-linear-gradient(315deg, rgb(66, 80, 107, 0.877), rgb(66, 80, 107));
+	background: linear-gradient(315deg, rgb(66, 80, 107, 0.877), rgb(66, 80, 107));
+}
+
+.content-card img{
+	padding-top: 20px;
+	width:170px;
+	height:auto;
+}
+
+.content-card2{
+	border-radius: 20px;
+	padding-top: 20px;
+	width:230px;
+	margin: 0 auto;
+	height:281px;
+	background: -webkit-linear-gradient(315deg, rgba(66, 80, 107, 0.877), rgb(66, 80, 107));
+	background: -moz-linear-gradient(315deg, rgb(66, 80, 107, 0.877), rgb(66, 80, 107));
+	background: linear-gradient(315deg, rgb(66, 80, 107, 0.877), rgb(66, 80, 107));
+}
+
+.city{
+	color:white;
+	font-size:24px;
+	margin-bottom:5px;
+}
+
+.card-degrees{
+	color:white;
+	font-size:24px;
+	margin-bottom: 0;
+}
+
+.card-degrees-weather{
+	color:white;
+	font-size:16px;
+}
+
+.max-min{
+	color:white;
+	padding-bottom: 30px;
+}
+
+footer{
+	margin-top: 100px!important;
+	background-color: #42506B;
+}
+
+.footer-copyright{
+	color:white;
+	font-size:24px;
+}
+
+  /*End Index*/
+
+   /*Start Today*/
+
+   .card-today{
+	width:500px;
+	height:auto;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.card-today .content-card{
+	padding-top: 100px;
+	width:100%;
+}
+
+.card-today .content-card img{
+	padding-top: 20px;
+	width:343px;
+	height:auto;
+}
+
+@media (max-width: 468px) {
+	.card-today .content-card img{
+		width:100%;
+	}
+
+	.card-today .content-card{
+		width:90%;
+		margin: 0 auto;
+	}
+}
+
+.block1{
+	font-size: 22px;
+	color:white;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background: linear-gradient(90deg, #44FF02, #DBFF00,#FFBB0B, #FF0000, #CF31D2); /* Цвет линии */
+    height: 23px!important; /* Толщина линии */
+	width:191px;
+	margin: 0 auto;
+	opacity: 1;
+	border-radius: 20px;
+   }
+
+   .indicator{
+	width:23px;
+	height:23px;
+	border:1px solid white;
+	border-radius: 100%;
+	background-color:#42506B;
+	position: relative;
+	top:-8.9%;
+	left:20%;
+}
+
+.arc{
+	width: 135px;
+	height: 65px;
+	border-radius: 500px 500px 0 0;
+	border-top: 1px solid #FBEF54;
+	border-left: 1px solid #FBEF54;
+	border-right: 1px solid #FBEF54;
+	margin: 10px auto;
+}
+
+.sun2-50{
+	position: relative;
+	left:15%;
+	top:-5%;
+	width:61px;
+	height:auto;
+}
+
+.sun-50{
+	position: relative;
+	right:15%;
+	top:-5%;
+	width:61px;
+	height:auto;
+}
+
+.time-day{
+	color:white;
+	font-size:14px;
+	position: relative;
+	top:-40%;
+}
+
+.weather{
+	display: flex;
+}
+
+@media (max-width: 468px) {
+	.weather{
+		display: block;
+	}
+}
+
+   /*End Today*/

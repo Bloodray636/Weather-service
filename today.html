@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Adaptability-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Bootstrap link CSS-->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet"> 
+  <link href="bootstrap/css/bootstrap-utilities.min.css" rel="stylesheet"> 
+  
+  <!--Bootstrap link JS-->
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!--CSS link-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--JQuery link-->
+
+ <script src="js/jquery.js"></script>
+
+ <!--Font awesome-->
+ <script src="font-awesome/js/all.min.js"></script>
+ <link src="font-awesome/css/all.min.css">
+
+  <!-- css-vars -->
+  <script src="js/css-vars.js"></script>
+
+
+<!--Owl Slider-->
+<script src="js/owl-slider/js/owl.carousel.min.js"></script>
+<link src="js/owl-slider/css/owl.carousel.min.css">
+<link src="js/owl-slider/css/owl.theme.default.min.css">
+
+  <title>Метослужба</title>
+</head>
+
+<body>
+<header>
+<section class="menu mt-4">
+	<nav class="navbar navbar-expand-lg navbar-light p-2">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<img src="img/search.png">
+			<input class="form-control search ms-4" type="search" placeholder="Поиск города" aria-label="Search">
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+			<ul class="navbar-nav" style="margin-right:10px;">
+				<li class="nav-item">
+					<a class="source source-1 nav-link" aria-current="page" href="today.html" id="a1">Сегодня</a>
+				</li>
+				<li class="nav-item"> 
+					<a class="source source-2 nav-link" aria-current="page" href="index.html" id="a2">Неделя</a>
+				</li>
+			</ul>
+			</div>
+			<div class="degrees d-flex">
+				<button onclick="change4()" class="degrees-c d-flex">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+						<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+					</svg>
+					<p class="degrees-c-c text-center">C</p>
+				</button>
+				<button onclick="change3()" class="degrees-f d-flex ms-3">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+						<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+					</svg>
+					<p class="degrees-c-c text-center">F</p>
+				</button>
+			</div>
+		</div>
+	</nav>
+</section>
+
+	<div class="week container">
+		<div class="row">
+				<div class="card-today col-md-6 col-lg-6">
+					<p class="day">Понедельник</p>
+					<div class="content-card text-center">
+						<img src="img/cloud-sun.png">
+						<p class="city text-center">Омск</p>
+						<p class="card-degrees text-center" id="degrees22">15°</p>
+						<p class="card-degrees-weather text-center">Дождь</p>
+						<p class="max-min text-center">Макс: <a id="degrees23">20°</a>, мин: <a id="degrees24">9°</a></p>
+					</div>
+				</div>
+				<div class="card-today col-md-6 col-lg-6">
+					<div class="weather">
+						<div class="content-card2 mt-5 text-center">
+							<p class="city text-center">УФ-ИНДЕКС</p>
+							<p class="block1 text-start ms-4 mb-0">3</p>
+							<p class="block1 text-start ms-4">Умеренный</p>
+							<hr>
+							<div class="indicator"></div>
+							<p class="block1 text-start ms-4">Защищайтесь от солнца до 16:00</p>
+						</div>
+						<div class="content-card2 mt-5 text-center">
+							<p class="city text-center mb-5">Заход солнца</p>
+							<div class="arc"></div>
+							<img class="sun-50" src="img/sun-50.png">
+							<img class="sun2-50" src="img/sun-50.png">
+							<p class="time-day text-center">Световой день<br>16 ч 23 мин</p>
+						</div>
+					</div>
+					<div class="weather mt-3">
+						<div class="content-card2 mt-5 text-center">
+							<p class="city text-center">Ощущается как</p>
+							<p class="block1 text-start ms-4 mb-5">18°</p>
+							<p class="block1 text-start ms-4 mt-5 pt-5">По ощущениям примерно так же</p>
+						</div>
+						<div class="content-card2 mt-5 text-center">
+							<p class="city text-center">Осадки</p>
+							<p class="block1 text-start ms-4 mb-0">0 мм</p>
+							<p class="block1 text-start ms-4 mb-0">За последн. 24ч</p>
+							<p class="block1 text-start ms-4 mt-5 pt-3">1 мм ожидается в течение суток.</p>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<footer class="p-0 m-0 mt-5">
+		<div class="container w-100">
+			<div class="row">
+			<div class="footer-copyright w-100 pt-3 pb-2 text-center">
+				<p class="text-white pt-3">© Метеослужба, 2022. Все права защищены</p>
+			</div>
+	</footer>
+		<script src="js/script.js"></script>
+</body>
+</script>
+</html>
